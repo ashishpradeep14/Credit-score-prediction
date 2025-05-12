@@ -1,7 +1,9 @@
-Credit Score Classification
+# Credit Score Classification
+____________________________
 This project builds a machine learning pipeline to classify individuals' credit scores as Poor, Standard, or Good based on various financial and demographic features. The workflow includes data preprocessing, exploratory data analysis (EDA), feature engineering, model selection, hyperparameter tuning, and prediction deployment.
 
-📂 Project Structure
+## 📂 Project Structure
+______________________
 credit_score.py: Main script implementing the full ML pipeline from data loading to model saving.
 
 train.csv: Training dataset (not included in the repo).
@@ -12,7 +14,8 @@ credit_score_model.pkl: Trained model (generated after execution).
 
 scaler.pkl: Scaler used for input feature normalization.
 
-🔍 Features Used
+### 🔍Features Used
+--------------------
 Age, Income, Credit Card Usage, Number of Loans, Payment History
 
 Engineered features like:
@@ -25,7 +28,8 @@ Credit Utilization Category
 
 Age Group
 
-🧪 ML Models Evaluated
+### 🧪 ML Models Evaluated
+---------------------------
 Logistic Regression
 
 Random Forest
@@ -38,7 +42,8 @@ XGBoost
 
 The best model is chosen based on validation accuracy, and optionally tuned using RandomizedSearchCV.
 
-🧰 Tech Stack
+### 🧰 Tech Stack
+------------------
 Python
 
 Pandas, NumPy
@@ -49,7 +54,8 @@ Scikit-learn, XGBoost
 
 Joblib (for model serialization)
 
-⚙️ How to Run
+### ⚙️ How to Run
+------------------
 Install requirements
 
 bash
@@ -64,6 +70,7 @@ bash
 Copy
 Edit
 python credit_score.py
+
 Output
 
 Trained model saved as credit_score_model.pkl
@@ -72,17 +79,20 @@ Scaler saved as scaler.pkl
 
 Accuracy scores and classification reports printed for all models.
 
-🧾 Output Labels
+### 🧾 Output Labels
+---------------------
 0: Poor Credit Score
 
 1: Standard Credit Score
 
 2: Good Credit Score
 
-🔮 Example Prediction
+### 🔮 Example Prediction
+--------------------------
 A sample prediction on custom user input is included at the end of the script with proper preprocessing and scaling.
 
-📌 Notes
+### 📌 Notes
+-------------
 The script automatically handles missing values, outliers, and categorical encoding.
 
 Some columns such as ID, SSN, and Name are excluded from training due to irrelevance or uniqueness.
@@ -90,4 +100,5 @@ Some columns such as ID, SSN, and Name are excluded from training due to irrelev
 Ensure all feature engineering steps are applied to both training and new input data.
 
 📧 Contact
+-------------
 For questions or improvements, feel free to open an issue or submit a pull request.
